@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+
+  
+
+  
+    <meta name="author" content="性感圣诞女孩">
+  
+
+  
+
+  
+
+  <title>Win上搭建Hexo+Github博客 | 心灵鸡汤</title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/monokai.min.css" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- header -->
+<header class="header">
+  <div class="header-navbar">
+    <div class="header-navbar-left">
+      <h1 class="header-navbar-logo">
+        <a href="/">
+          
+            <img src="https://qiniu.miiiku.xyz/src/images/logo.png" alt="心灵鸡汤">
+          
+        </a>
+      </h1>
+    </div>
+    <div class="header-navbar-right">
+      <div class="header-navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="header-navbar-list">
+        
+          <li class="header-navbar-item"><a href="/">Home</a></li>
+        
+          <li class="header-navbar-item"><a href="/about">About</a></li>
+        
+          <li class="header-navbar-item"><a href="/links">Link</a></li>
+        
+          <li class="header-navbar-item"><a href="/tags">Tags</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <section id="main"><!-- 文章详情页 -->
+
+
+<!-- banner container -->
+<div class="banner-container">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      <div class="banner-content post-content is-post-image">
+        <div class="post-image" style="background-image: url(http://wx1.sinaimg.cn/mw690/00824qFdly1ga4o4h3xj4j30ms0ctaej.jpg)"></div>
+        <div class="post-text">
+          <div class="type-wrap">
+            <a class="article-category-link" href="/categories/博客搭建/">博客搭建</a>
+          </div>
+          <h1 class="title-wrap">Win上搭建Hexo+Github博客</h1>
+          <h2 class="title-sub-wrap">
+            <strong>性感圣诞女孩</strong>
+            <span>发布于</span>
+            
+  <a href="javascript:;" class="article-date">
+    <time datetime="2019-12-16T00:39:34.000Z" itemprop="datePublished">2019-12-16</time>
+  </a>
+
+          </h2>
+        </div>
+      </div>
+    
+  
+
+  
+  
+
+</div>
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article id="article-container" class="main-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <p>参考网上的一些教程,搭建Hexo+Github博客,</p>
+<a id="more"></a>
+<h4 id="1-新建github账号-并创建仓库-仓库名字必须为-你的github用户名-github-io"><a href="#1-新建github账号-并创建仓库-仓库名字必须为-你的github用户名-github-io" class="headerlink" title="1 新建github账号,并创建仓库, 仓库名字必须为[你的github用户名.github.io]"></a>1 新建github账号,并创建仓库, 仓库名字必须为[你的github用户名.github.io]</h4><h4 id="2-安装node-自己百度-通过命令检测是否安装成功"><a href="#2-安装node-自己百度-通过命令检测是否安装成功" class="headerlink" title="2 安装node (自己百度) , 通过命令检测是否安装成功."></a>2 安装node (自己百度) , 通过命令检测是否安装成功.</h4><p><img src="http://images.wxyass.com/wxyass/images/20170623140702.png" alt="2017-6-23">    </p>
+<h4 id="3-安装git-自己百度-通过命令检测是否安装成功"><a href="#3-安装git-自己百度-通过命令检测是否安装成功" class="headerlink" title="3 安装git (自己百度), 通过命令检测是否安装成功."></a>3 安装git (自己百度), 通过命令检测是否安装成功.</h4><p><img src="http://images.wxyass.com/wxyass/images/20170623140744.png" alt="2017-6-23">     </p>
+<h4 id="4-安装python-版本2-7-x-自己百度-非必需可以不安装"><a href="#4-安装python-版本2-7-x-自己百度-非必需可以不安装" class="headerlink" title="4 安装python, 版本2.7.x (自己百度) 非必需可以不安装"></a>4 安装python, 版本2.7.x (自己百度) 非必需可以不安装</h4><h4 id="5-安装hexo"><a href="#5-安装hexo" class="headerlink" title="5 安装hexo"></a>5 安装hexo</h4><p>在任意文件夹(比如:  E:\我的坚果云\Blog\wxchat.com )中右击 , 选择Git Bash here , 依次执行以下命令安装hexo:    </p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+cnpm install hexo-cli -g
+
+hexo init
+
+cnpm install
+
+hexo s
+</code></pre><h4 id="6-如果你想卸载Hexo"><a href="#6-如果你想卸载Hexo" class="headerlink" title="6 如果你想卸载Hexo"></a>6 如果你想卸载Hexo</h4><p>在任意文件夹下(比如:  E:\我的坚果云\Blog\wxchat.com )右击 , 选择Git Bash here , 使用以下命令卸载hexo  : </p>
+<pre><code>3.0.0版本执行 cnpm uninstall hexo-cli -g，之前版本执行cnpm uninstall hexo -g 
+
+然后删除文件夹(E:\我的坚果云\Blog\wxchat.com )
+</code></pre><h4 id="7-跳过第6步-在浏览器中打开http-localhost-4000，成功的话即可看到博客页面，至此Hexo安装就完成了"><a href="#7-跳过第6步-在浏览器中打开http-localhost-4000，成功的话即可看到博客页面，至此Hexo安装就完成了" class="headerlink" title="7 跳过第6步 , 在浏览器中打开http://localhost:4000，成功的话即可看到博客页面，至此Hexo安装就完成了"></a>7 跳过第6步 , 在浏览器中打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，成功的话即可看到博客页面，至此Hexo安装就完成了</h4><p>若果你的4000端口被占用(如被福晰阅读器占用了),导致页面访问失败 ,</p>
+<pre><code>解决: 关闭命令行,在本文件夹下右击选择 git base here , 用hexo s -p 5000启动, 
+并浏览器打开http://localhost:5000 试试  
+</code></pre><h4 id="8-上面几步完成了远程仓库的搭建和本地Hexo的搭建-下面几步是将远程仓库和本地Hexo做关联"><a href="#8-上面几步完成了远程仓库的搭建和本地Hexo的搭建-下面几步是将远程仓库和本地Hexo做关联" class="headerlink" title="8 上面几步完成了远程仓库的搭建和本地Hexo的搭建, 下面几步是将远程仓库和本地Hexo做关联"></a>8 上面几步完成了远程仓库的搭建和本地Hexo的搭建, 下面几步是将远程仓库和本地Hexo做关联</h4><h4 id="9-在-E-我的坚果云-Blog-wxchat-com-config-yml-文件中-文件最底端修改如下-注意-repository改成自己的仓库地址"><a href="#9-在-E-我的坚果云-Blog-wxchat-com-config-yml-文件中-文件最底端修改如下-注意-repository改成自己的仓库地址" class="headerlink" title="9 在 E:\我的坚果云\Blog\wxchat.com\_config.yml 文件中, 文件最底端修改如下 : (注意: repository改成自己的仓库地址)"></a>9 在 E:\我的坚果云\Blog\wxchat.com\_config.yml 文件中, 文件最底端修改如下 : (注意: repository改成自己的仓库地址)</h4><pre><code>deploy:
+  type: git
+  repository: https://github.com/wxchat/wxchat.github.io.git
+  branch: master
+</code></pre><h4 id="10-这里安装一个插件来帮助我们完成代码上传的工作，安装-hexo-deployer-git。安装代码如下"><a href="#10-这里安装一个插件来帮助我们完成代码上传的工作，安装-hexo-deployer-git。安装代码如下" class="headerlink" title="10 这里安装一个插件来帮助我们完成代码上传的工作，安装 hexo-deployer-git。安装代码如下"></a>10 这里安装一个插件来帮助我们完成代码上传的工作，安装 hexo-deployer-git。安装代码如下</h4><p>在文件夹(比如:  E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令设置  </p>
+<pre><code>cnpm install hexo-deployer-git --save
+</code></pre><h4 id="11-本地生成静态页面"><a href="#11-本地生成静态页面" class="headerlink" title="11 本地生成静态页面"></a>11 本地生成静态页面</h4><p>在文件夹(比如:  E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令本地生成静态页面  </p>
+<pre><code>hexo g
+</code></pre><h4 id="12-部署到远程github上"><a href="#12-部署到远程github上" class="headerlink" title="12 部署到远程github上"></a>12 部署到远程github上</h4><p>在文件夹(比如:  E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令部署到远程github上  </p>
+<pre><code>hexo d
+</code></pre><h4 id="13-若报错-ERROR-Deployer-not-found-git"><a href="#13-若报错-ERROR-Deployer-not-found-git" class="headerlink" title="13 若报错  ERROR Deployer not found: git"></a>13 若报错  ERROR Deployer not found: git</h4><p>应对执行  </p>
+<pre><code>$ cnpm install hexo-deployer-git --save
+</code></pre><h4 id="14-部署时需要设置Git的user-name和email：-如果是第一次的话"><a href="#14-部署时需要设置Git的user-name和email：-如果是第一次的话" class="headerlink" title="14 部署时需要设置Git的user name和email：(如果是第一次的话)"></a>14 部署时需要设置Git的user name和email：(如果是第一次的话)</h4><p>在文件夹(比如:  E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令设置Git的user name和email :   </p>
+<pre><code>git config --global user.name &quot;wxchat&quot;
+git config --global user.email &quot;wxchat@gmail.com&quot;
+</code></pre><p>输入github的登录密码  </p>
+<p><img src="http://images.wxyass.com/wxyass/images/20170623140808.png" alt="2017-6-23"></p>
+<h4 id="15-重新部署-hexo-d-成功后-通过访问-https-wxchat-github-io-来查看博客"><a href="#15-重新部署-hexo-d-成功后-通过访问-https-wxchat-github-io-来查看博客" class="headerlink" title="15 重新部署 hexo d 成功后,通过访问 https://wxchat.github.io/ 来查看博客"></a>15 重新部署 hexo d 成功后,通过访问 <a href="https://wxchat.github.io/" target="_blank" rel="noopener">https://wxchat.github.io/</a> 来查看博客</h4><hr>
+<h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述:"></a>问题描述:</h4><p>1 假如有2个github账号,对应2个博客,如何使A账号对A博客提交数据,B账号对B博客提交数据,而不会造成冲突报错? 比如电脑登录的是A账号,如何切换成B账号,让B账号对B博客提交数据.   </p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决:"></a>解决:</h4><p>控制面板-&gt;用户帐户和家庭安全-&gt;凭据管理器-&gt;里面发现git的相关账户信息-&gt;删除账户数据-&gt;重新在部署(hexo d)时登录新账号.       </p>
+<p><img src="http://images.wxyass.com/wxyass/images/20170623140855.png" alt="2017-6-23"></p>
+<hr>
+<h4 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h4><h5 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装:"></a>1 安装:</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令安装  </p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><h5 id="2-启用-根-config-yml"><a href="#2-启用-根-config-yml" class="headerlink" title="2 启用   根_config.yml"></a>2 启用   根_config.yml</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com )中找到_config.yml 并打开, 找到 theme 字段，并将其值更改为 next  </p>
+<pre><code>theme: next 
+</code></pre><h5 id="3-修改皮肤-主题-config-yml"><a href="#3-修改皮肤-主题-config-yml" class="headerlink" title="3 修改皮肤  主题_config.yml"></a>3 修改皮肤  主题_config.yml</h5><p>在文件夹(E:\我的坚果云\Blog\wxchat.com\themes\next)中找到_config.yml 并打开, 全局搜索找到 scheme 字段，将你需用启用的 scheme 前面注释 # 去除即可  </p>
+<pre><code>#scheme: Muse
+#scheme: Mist
+scheme: Pisces
+</code></pre><h5 id="4-设置语言-根-config-yml"><a href="#4-设置语言-根-config-yml" class="headerlink" title="4 设置语言  根_config.yml"></a>4 设置语言  根_config.yml</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com )中找到_config.yml 并打开, 找到 language 字段，并将其值更改为 zh-Hans  </p>
+<pre><code>language: zh-Hans
+</code></pre><h5 id="5-添加标签页"><a href="#5-添加标签页" class="headerlink" title="5 添加标签页"></a>5 添加标签页</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令   </p>
+<pre><code>hexo new page tags  
+</code></pre><p>编辑刚新建的页面( E:\我的坚果云\Blog\wxchat.com\source\tags\index.md ), 内容如下:   </p>
+<pre><code>title:  标签
+date: 2014-12-22 12:39:04
+type: &quot;tags&quot;
+comments: false  
+</code></pre><h5 id="6-添加分类页"><a href="#6-添加分类页" class="headerlink" title="6 添加分类页"></a>6 添加分类页</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令   </p>
+<pre><code>hexo new page categories  
+</code></pre><p>编辑刚新建的页面( E:\我的坚果云\Blog\wxchat.com\source\categories\index.md ), 内容如下:   </p>
+<pre><code>---
+title: 分类
+date: 2017-06-21 17:11:36 
+type: &quot;categories&quot;
+comments: false 
+---  
+</code></pre><p>用法: 跟标签一样,新建帖子时, 修改标题  </p>
+<pre><code>---
+title: 帖子名称
+date: 2017-06-21 17:13:24
+tags: [好莱坞]
+categories: [阿达,电影]
+---
+</code></pre><h5 id="7-添加关于页"><a href="#7-添加关于页" class="headerlink" title="7 添加关于页"></a>7 添加关于页</h5><p>在文件夹( E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令   </p>
+<pre><code>hexo new page about  
+</code></pre><p>编辑刚新建的页面( E:\我的坚果云\Blog\wxchat.com\source\about\index.md ), 内容如下:   </p>
+<pre><code>title:  关于
+date: 2014-12-22 12:39:04
+comments: false 
+---
+</code></pre><h5 id="8-修改头像-主题-config-yml"><a href="#8-修改头像-主题-config-yml" class="headerlink" title="8 修改头像 主题_config.yml"></a>8 修改头像 主题_config.yml</h5><p>在文件夹(E:\我的坚果云\Blog\wxchat.com\themes\next)中找到_config.yml 并打开, 全局搜索找到 avatar 字段, 修改url地址 如下  </p>
+<pre><code>avatar: http://wxyass-com.oss-cn-beijing.aliyuncs.com/wxyass/images/yuantu.jpeg  
+</code></pre><h5 id="9-搜索-根-config-yml-放弃这种方法吧"><a href="#9-搜索-根-config-yml-放弃这种方法吧" class="headerlink" title="9 搜索  根_config.yml  (放弃这种方法吧)"></a>9 搜索  根_config.yml  (放弃这种方法吧)</h5><p>安装: 在文件夹( E:\我的坚果云\Blog\wxchat.com ) 下右击 , 选择Git Bash here , 使用以下命令  </p>
+<pre><code>npm install hexo-generator-searchdb --save
+</code></pre><p>站点配置: 在文件夹(E:\我的坚果云\Blog\wxchat.com)中找到_config.yml 并打开,新增以下内容到任意位置：  </p>
+<pre><code>search:
+ path: search.xml
+ field: post
+ format: html
+ limit: 10000
+</code></pre><p>主题配置: 在文件夹( E:\我的坚果云\Blog\wxchat.com\themes\next )中找到_config.yml 并打开, 启用本地搜索功能,修改如下;   </p>
+<pre><code># Local search
+local_search:
+      enable: true
+</code></pre><h5 id="10-分页时每页显示文章数量-根-config-yml"><a href="#10-分页时每页显示文章数量-根-config-yml" class="headerlink" title="10  分页时每页显示文章数量  根_config.yml"></a>10  分页时每页显示文章数量  根_config.yml</h5><p>在文件夹(E:\我的坚果云\Blog\wxchat.com)中找到_config.yml 并打开,修改一下内容:   </p>
+<pre><code># Pagination 分页
+## Set per_page to 0 to disable pagination
+   per_page: 10   #每页显示的文章量 (0 = 关闭分页功能)
+   pagination_dir: page   #分页目录
+</code></pre><h5 id="11-设置新建帖子时的模板"><a href="#11-设置新建帖子时的模板" class="headerlink" title="11 设置新建帖子时的模板"></a>11 设置新建帖子时的模板</h5><p>修改 E:\我的坚果云\Blog\wxchat.github.io\scaffolds\post.md 的模板  </p>
+<pre><code>---
+title: {{ title }}
+date: {{ date }}
+tags: 
+categories:   
+---
+</code></pre><h5 id="12-OK"><a href="#12-OK" class="headerlink" title="12 OK"></a>12 OK</h5><p>参考：<a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">手把手教你用Hexo+Github 搭建属于自己的博客</a>  </p>
+
+      </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">#博客搭建</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div id="article-nav-older" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(http://wx3.sinaimg.cn/mw690/00824qFdly1ga4hzdp4bsj30p00gojvg.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/2018/12/03/武侠幻想/102 射雕英雄外传/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              射雕英雄外传
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
+</div></section>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2020 <a href="/" target="_blank">性感圣诞女孩</a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  
+  <!-- 尾部其他内容 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="/lib/APlayer.min.css">
+  <script src="/lib/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+<link rel="stylesheet" href="/lib/DPlayer.min.css">
+<script src="/lib/DPlayer.min.js"></script>
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      new DPlayer({
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      });
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+<script src="/lib/waterfall.min.js"></script>
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  <script src="/lib/zoom.min.js"></script>
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+<script src="/js/script.js"></script>
+</body>
+</html>
